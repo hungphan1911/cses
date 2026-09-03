@@ -19,7 +19,9 @@ SOLUTIONS_ROOT="${SOLUTIONS_DIR:-$SCRIPT_DIR/solutions}"
 README_PATH="${README_FILE:-$SCRIPT_DIR/README.md}"
 BINARY_PATH="$SCRIPT_DIR/a"
 COMPILER="${CXX:-g++}"
-TIMEOUT_SECONDS="${TEST_TIMEOUT:-10}"
+# This is a fresh wall-clock budget for each individual test process. It is
+# intentionally fixed so a test cannot borrow unused time from another test.
+TIMEOUT_SECONDS=1
 PROBLEM_KEY="${1%/}"
 
 case "$PROBLEM_KEY" in
@@ -103,12 +105,13 @@ if ! command -v python3 >/dev/null 2>&1; then
     exit 2
 fi
 
-DEFAULT_FLAGS="-std=c++20 -O2"
+DEFAULT_FLAGS="-std=c++20 -O2 -Wall -Wextra -pedantic"
 read -r -a COMPILE_FLAGS <<< "${CXXFLAGS:-$DEFAULT_FLAGS}"
 
 echo "Compiling $SOLUTION_PATH"
 echo "  $COMPILER ${COMPILE_FLAGS[*]} -o $BINARY_PATH"
 "$COMPILER" "${COMPILE_FLAGS[@]}" "$SOLUTION_PATH" -o "$BINARY_PATH"
+echo "Running ${#INPUTS[@]} test(s) with a ${TIMEOUT_SECONDS}s limit per test"
 
 TEMP_DIR="$(mktemp -d "${TMPDIR:-/tmp}/cses-run.XXXXXX")"
 cleanup() {

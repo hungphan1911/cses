@@ -1,7 +1,7 @@
 <!-- CSES_PROGRESS_START -->
 ## CSES Progress
 
-**Completed problems:** 11  
+**Completed problems:** 12  
 **Last updated:** 2026-09-02
 
 | Problem | Category | Completed |
@@ -17,4 +17,5 @@
 | [Trailing Zeros](https://cses.fi/problemset/task/1618) | Introductory Problems | 2026-09-01 <!-- cses-task:1618 --> |
 | [Two Knights](https://cses.fi/problemset/task/1072) | Introductory Problems | 2026-09-01 <!-- cses-task:1072 --> |
 | [Minimizing Coins](https://cses.fi/problemset/task/1634) | Dynamic Programming | 2026-09-02 <!-- cses-task:1634 --> |
+| [Static Range Sum Queries](https://cses.fi/problemset/task/1646) | Range Queries | 2026-09-02 <!-- cses-task:1646 --> |
 <!-- CSES_PROGRESS_END -->

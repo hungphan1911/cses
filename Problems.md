@@ -3,15 +3,15 @@
 ## Introductory Problems
 
 - ~~[Weird Algorithm](https://cses.fi/problemset/task/1068)~~
-- [Missing Number](https://cses.fi/problemset/task/1083)
-- [Repetitions](https://cses.fi/problemset/task/1069)
-- [Increasing Array](https://cses.fi/problemset/task/1094)
+- ~~[Missing Number](https://cses.fi/problemset/task/1083)~~
+- ~~[Repetitions](https://cses.fi/problemset/task/1069)~~
+- ~~[Increasing Array](https://cses.fi/problemset/task/1094)~~
 - [Permutations](https://cses.fi/problemset/task/1070)
-- [Number Spiral](https://cses.fi/problemset/task/1071)
-- [Two Knights](https://cses.fi/problemset/task/1072)
+- ~~[Number Spiral](https://cses.fi/problemset/task/1071)~~
+- ~~[Two Knights](https://cses.fi/problemset/task/1072)~~
 - [Two Sets](https://cses.fi/problemset/task/1092)
 - [Bit Strings](https://cses.fi/problemset/task/1617)
-- [Trailing Zeros](https://cses.fi/problemset/task/1618)
+- ~~[Trailing Zeros](https://cses.fi/problemset/task/1618)~~
 - [Coin Piles](https://cses.fi/problemset/task/1754)
 - [Palindrome Reorder](https://cses.fi/problemset/task/1755)
 - [Gray Code](https://cses.fi/problemset/task/2205)
@@ -67,7 +67,7 @@
 
 ## Dynamic Programming
 
-- [Dice Combinations](https://cses.fi/problemset/task/1633)
+- ~~[Dice Combinations](https://cses.fi/problemset/task/1633)~~
 - ~~[Minimizing Coins](https://cses.fi/problemset/task/1634)~~
 - [Coin Combinations I](https://cses.fi/problemset/task/1635)
 - [Coin Combinations II](https://cses.fi/problemset/task/1636)
@@ -132,9 +132,9 @@
 
 ## Range Queries
 
-- [Static Range Sum Queries](https://cses.fi/problemset/task/1646)
-- [Static Range Minimum Queries](https://cses.fi/problemset/task/1647)
-- [Dynamic Range Sum Queries](https://cses.fi/problemset/task/1648)
+- ~~[Static Range Sum Queries](https://cses.fi/problemset/task/1646)~~
+- ~~[Static Range Minimum Queries](https://cses.fi/problemset/task/1647)~~
+- ~~[Dynamic Range Sum Queries](https://cses.fi/problemset/task/1648)~~
 - [Dynamic Range Minimum Queries](https://cses.fi/problemset/task/1649)
 - [Range Xor Queries](https://cses.fi/problemset/task/1650)
 - [Range Update Queries](https://cses.fi/problemset/task/1651)

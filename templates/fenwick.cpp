@@ -16,6 +16,8 @@ template<typename T> void print(unordered_set<T> x){for(auto i: x) cout << i << 
 template<typename T> void print(T && x) {cout << x << "\n";}
 template<typename... Args> void print(Args&&... args) {((cout << args << " "), ...);cout << "\n";}
 
+// usage: dynamic range sum query
+// example: https://cses.fi/problemset/task/1648
 struct FenwickTree {
     vector<int> tree;
     int n;
@@ -44,8 +46,6 @@ struct FenwickTree {
     }
 };
 
-// usage: dynamic range sum query
-// example: https://cses.fi/problemset/task/1648
 void solve() {
     int n, q; cin >> n >> q;
     FenwickTree tree(n);

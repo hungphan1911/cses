@@ -2,3 +2,5 @@ a
 cses-problemset
 .vscode
 draft.*
+node_modules/
+dist/

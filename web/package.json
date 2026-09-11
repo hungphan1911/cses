@@ -1,0 +1,32 @@
+{
+  "name": "cses-grinding",
+  "version": "1.0.0",
+  "description": "A static browser for CSES code templates.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hungphan1911/cses.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hungphan1911/cses/issues"
+  },
+  "homepage": "https://github.com/hungphan1911/cses#readme",
+  "dependencies": {
+    "@types/prismjs": "^1.26.6",
+    "jsdom": "^29.1.1",
+    "prismjs": "^1.30.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0",
+    "vitest": "^4.1.11"
+  }
+}

@@ -441,6 +441,8 @@ else:
             start_marker,
             "## CSES Progress",
             "",
+            "Templates/snippets are hosted at: https://hungphan1911.github.io/cses/",
+            "",
             f"**Completed problems:** {len(rows)}  ",
             f"**Last updated:** {updated}",
             "",

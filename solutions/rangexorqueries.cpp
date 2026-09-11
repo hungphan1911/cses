@@ -31,32 +31,19 @@ ll modinv(ll a, ll mod = MOD) { return binpow(a, mod - 2, mod); }
 
 // Actual solve method
 void solve() {
-    string s; cin >> s;
-    int k; cin >> k;
-    unordered_set<string> dict;
-    for (int i = 0; i < k; i++) {
-        string tmp;
-        cin >> tmp;
-        dict.insert(tmp);
-    };
-    
-    int n = s.size();
-    vector<int> dp(n+1, 0);
-    dp[0] = 1;
-
-    for (int i = 1; i <= n; i++) {
-        for (int j = i-1; j >= 0; j--) {
-            string ss = s.substr(0, j+1);
-            if (dp[j] > 0 && dict.contains(ss)) {
-                dp[i]+=dp[j];
-                dp[i] %= MOD;
-            }
-        }
+    int n, q; cin >> n >> q;
+    vector<int> a(n);
+    for (int i = 0; i < n; i++) cin >> a[i];
+    vector<int> pref_xor(n+1, 0);
+    for (int i = 0; i < n; i++) {
+        pref_xor[i+1] = pref_xor[i] ^ a[i];
     }
 
-    cout << dp[n] << endl;
+    for (int i = 0; i < q; i++) {
+        int a, b; cin >> a >> b;
+        cout << (pref_xor[b] ^ pref_xor[a-1]) << endl;
+    }
 }
-
 
 signed main() {
     ios_base::sync_with_stdio(0);

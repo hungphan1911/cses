@@ -28,35 +28,59 @@ ll lcm(ll a, ll b) { return a / gcd(a,b) * b; }
 ll binpow(ll a, ll b, ll mod = MOD) { ll res = 1; while (b) { if (b & 1) res = res * a % mod; a = a * a % mod; b >>= 1; } return res; }
 ll modinv(ll a, ll mod = MOD) { return binpow(a, mod - 2, mod); }
 
+struct SegmentTree {
+    int n;
+    vector<int> tree;
+    SegmentTree(int n) : n(n) {
+        tree.assign(2LL*n, 0);
+    }
 
-// Actual solve method
-void solve() {
-    string s; cin >> s;
-    int k; cin >> k;
-    unordered_set<string> dict;
-    for (int i = 0; i < k; i++) {
-        string tmp;
-        cin >> tmp;
-        dict.insert(tmp);
-    };
-    
-    int n = s.size();
-    vector<int> dp(n+1, 0);
-    dp[0] = 1;
-
-    for (int i = 1; i <= n; i++) {
-        for (int j = i-1; j >= 0; j--) {
-            string ss = s.substr(0, j+1);
-            if (dp[j] > 0 && dict.contains(ss)) {
-                dp[i]+=dp[j];
-                dp[i] %= MOD;
-            }
+    void add(int k, int x) {
+        k += n;
+        tree[k] += x;
+        for (k /= 2; k >= 1; k /= 2) {
+            tree[k] = min(tree[2*k], tree[2*k+1]);
         }
     }
 
-    cout << dp[n] << endl;
-}
+    int get_min(int a, int b) {
+        a += n;
+        b += n;
+        int res = 1e10;
+        while (a <= b) {
+            if (a%2 == 1) res = min(tree[a++], res); 
+            if (b%2 == 0) res = min(tree[b--], res); 
+            a /= 2; b /= 2;
+        }
 
+        return res;
+    }
+};
+// Actual solve method
+void solve() {
+    int n, q; cin >> n >> q;
+    SegmentTree st(n);
+    vector<int> a(n);
+    for (int i = 0; i < n; i++) {
+        int tmp; cin >> tmp;
+        a[i] = tmp;
+        st.add(i, tmp);
+    }
+
+    for (int i = 0; i < q; i++) {
+        int t, x, y; cin >> t >> x >> y;
+        if (t == 1) {
+            x--;
+            int delta = y - a[x];
+            a[x] = y;
+            st.add(x, delta);
+        }
+        else {
+            x--; y--;
+            cout << st.get_min(x, y) << endl;
+        }
+    }
+}
 
 signed main() {
     ios_base::sync_with_stdio(0);

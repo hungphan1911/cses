@@ -135,8 +135,8 @@
 - ~~[Static Range Sum Queries](https://cses.fi/problemset/task/1646)~~
 - ~~[Static Range Minimum Queries](https://cses.fi/problemset/task/1647)~~
 - ~~[Dynamic Range Sum Queries](https://cses.fi/problemset/task/1648)~~
-- [Dynamic Range Minimum Queries](https://cses.fi/problemset/task/1649)
-- [Range Xor Queries](https://cses.fi/problemset/task/1650)
+- ~~[Dynamic Range Minimum Queries](https://cses.fi/problemset/task/1649)~~
+- ~~[Range Xor Queries](https://cses.fi/problemset/task/1650)~~
 - [Range Update Queries](https://cses.fi/problemset/task/1651)
 - [Forest Queries](https://cses.fi/problemset/task/1652)
 - [Hotel Queries](https://cses.fi/problemset/task/1143)

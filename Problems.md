@@ -137,7 +137,7 @@
 - ~~[Dynamic Range Sum Queries](https://cses.fi/problemset/task/1648)~~
 - ~~[Dynamic Range Minimum Queries](https://cses.fi/problemset/task/1649)~~
 - ~~[Range Xor Queries](https://cses.fi/problemset/task/1650)~~
-- [Range Update Queries](https://cses.fi/problemset/task/1651)
+- ~~[Range Update Queries](https://cses.fi/problemset/task/1651)~~
 - [Forest Queries](https://cses.fi/problemset/task/1652)
 - [Hotel Queries](https://cses.fi/problemset/task/1143)
 - [List Removals](https://cses.fi/problemset/task/1749)

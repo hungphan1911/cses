@@ -1,7 +1,9 @@
 <!-- CSES_PROGRESS_START -->
 ## CSES Progress
 
-**Completed problems:** 14  
+Templates/snippets are hosted at: https://hungphan1911.github.io/cses/
+
+**Completed problems:** 15  
 **Last updated:** 2026-09-10
 
 | Problem | Category | Completed |
@@ -20,4 +22,5 @@
 | [Static Range Sum Queries](https://cses.fi/problemset/task/1646) | Range Queries | 2026-09-02 <!-- cses-task:1646 --> |
 | [Dynamic Range Minimum Queries](https://cses.fi/problemset/task/1649) | Range Queries | 2026-09-10 <!-- cses-task:1649 --> |
 | [Range Xor Queries](https://cses.fi/problemset/task/1650) | Range Queries | 2026-09-10 <!-- cses-task:1650 --> |
+| [Range Update Queries](https://cses.fi/problemset/task/1651) | Range Queries | 2026-09-10 <!-- cses-task:1651 --> |
 <!-- CSES_PROGRESS_END -->
